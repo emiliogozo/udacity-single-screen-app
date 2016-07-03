@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="ph.observatory.manilaobservatory.MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:id="@+id/company_image"
+                android:src="@drawable/mo_building"
+                android:scaleType="fitXY" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_about_cardview"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/header_about"
+                        android:id="@+id/company_about_header"
+                        android:padding="12sp"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorPrimary"
+                        android:focusable="true"
+                        android:enabled="true"
+                        android:longClickable="true"
+                        android:textIsSelectable="true" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorDivider"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_about"
+                        android:id="@+id/company_about_content"
+                        android:padding="12sp"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText"
+                        android:focusable="true"
+                        android:enabled="true"
+                        android:longClickable="true"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/company_info_cardview"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/company_email"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/company_email_icon"
+                            android:src="@drawable/ic_email_white_24dp"
+                            android:tint="@color/colorPrimary"
+                            android:padding="12dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/company_email"
+                                android:id="@+id/company_email_text"
+                                android:padding="12sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorText"
+                                android:focusable="true"
+                                android:enabled="true"
+                                android:longClickable="true"
+                                android:textIsSelectable="true" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorDivider"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/company_phone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/company_phone_icon"
+                            android:src="@drawable/ic_phone_white_24dp"
+                            android:tint="@color/colorPrimary"
+                            android:padding="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/company_phone"
+                                android:id="@+id/company_phone_text"
+                                android:padding="12sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorText"
+                                android:focusable="true"
+                                android:enabled="true"
+                                android:longClickable="true"
+                                android:textIsSelectable="true" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorDivider"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/company_address"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/company_address_icon"
+                            android:src="@drawable/ic_location_on_white_24dp"
+                            android:tint="@color/colorPrimary"
+                            android:padding="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/company_address"
+                                android:id="@+id/company_address_text"
+                                android:padding="12sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorText"
+                                android:focusable="true"
+                                android:enabled="true"
+                                android:longClickable="true"
+                                android:textIsSelectable="true" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorDivider"/>
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/company_website"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/company_website_icon"
+                            android:src="@drawable/ic_public_white_24dp"
+                            android:tint="@color/colorPrimary"
+                            android:padding="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/company_website"
+                                android:id="@+id/company_website_text"
+                                android:padding="12sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorText"
+                                android:focusable="true"
+                                android:enabled="true"
+                                android:longClickable="true"
+                                android:textIsSelectable="true" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorDivider"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

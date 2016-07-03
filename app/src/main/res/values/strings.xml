@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Manila Observatory</string>
+    <string name="header_about">About</string>
+    <string name="content_about">The Manila Observatory is a Jesuit scientific research institution
+        with research work in the fields of atmospheric and earth science in the Philippines and
+        the Southeast Asian region. It advocates a science-based approach to sustainable development
+        and poverty reduction.</string>
+    <string name="company_email">manila@observatory.ph</string>
+    <string name="company_phone">(632) 426 5921</string>
+    <string name="company_address">
+        Ateneo de Manila University\nLoyola Heights, Quezon City\nPhilippines 0917</string>
+    <string name="company_website">www.observatory.ph</string>
+</resources>
